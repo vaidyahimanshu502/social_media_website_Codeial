@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="<%= assetPath('css/user_profile.css') %>" />
+<h1><%= title %> | Page</h1>
+<img
+  src="<%= user.avatar %>"
+  alt="<% user.name %>"
+  height="200px"
+  width="200px"
+  style="border-radius: 50%"
+/>
+<h3>Name : <%= profile_user.name %></h3>
+<h3>Email : <%= profile_user.email %></h3>
+<!-- Before showing friends profile -->
+<!-- <h3> Name : <%= user.name %></h3>
+    <h3> Email : <%= user.email %></h3>
+  -->
+<!-- <h3> Name : <%= profile_user.name %></h3>
+    <h3> Email : <%= profile_user.email %></h3>  -->
+
+<% if(user.id == profile_user.id) {%>
+<!-- If user matches then show the form -->
+<form
+  action="/users/update/<%= profile_user.id %>"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name.."
+    value="<%= profile_user.name %>"
+    required
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email.."
+    value="<%= profile_user.email %>"
+    required
+  />
+  <input type="file" name="avatar" placeholder="profile-picture" />
+  <input type="submit" value="Update" />
+</form>
+
+<% } else { %>
+<!--else show only user's info -->
+<h3>Name : <%= profile_user.name %></h3>
+<h3>Email : <%= profile_user.email %></h3>
+<%}%>
+
+
+<!-- Adding and removing friends -->
+<div class="btn-grp">
+  <% let isFriend = false %>
+  <% for(let friend of locals.populated_user.friendship){ %>
+   
+    <% if(friend.to_user == profile_user.id || friend.from_user == profile_user.id){ %>
+      <% isFriend = true %>
+    <% } %>
+  <% } %>
+  <% if(isFriend){%>
+    <button class="btn save-btn">
+      <a style="color:rgb(15, 13, 13);" class="toggle-friend-btn" href="/friends/add-friend/?id=<%= profile_user.id %>">
+        Remove Friend
+      </a>
+    </button>
+  <% }else{%>
+    <button class="btn save-btn">
+      <a style="color:rgb(14, 13, 13);" class="toggle-friend-btn" href="/friends/add-friend/?id=<%= profile_user.id %>">
+        Add Friend
+      </a>
+    </button>
+  <% } %>
+</div>
+<script src="<%= assetPath('js/toggle_friends.js') %>"></script>

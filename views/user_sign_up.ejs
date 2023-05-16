@@ -1,0 +1,35 @@
+
+<div id="sing-up-container">
+  <div id="sign-up-page-container">
+    <h1>Codeial | SignUp</h1>
+    <form action="/users/create" method="POST">
+      <label for="name">Enter Name:</label>
+      <input type="text" name="name" placeholder="Your Name..." required id="name"/><br>
+  
+      <label for="email">Enter Email:</label>
+      <input type="email" name="email" placeholder="Your Email" required id="email"/><br>
+  
+      <label for="password">Create Password:</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Your Password"
+        id="password"
+        required
+      /> <br>
+      <label for="confirm-password">Confirm-Password:</label>
+      <input
+        type="password"
+        name="confirm_password"
+        placeholder="Confirm Password"
+        id="confirm-password"
+        required
+      /> <br>
+      <input type="submit" value="Sign-Up" id="sign-up-btn" />
+    </form>
+  
+    <h3>
+        <a href="/users/auth/google">Google SignIn | SignUp</a> <br>
+    </h3>
+  </div> 
+</div>
