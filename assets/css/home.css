@@ -1,0 +1,61 @@
+#home_page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #home_page-container #Section {
+    width: 70%;
+    border-right: 1px solid black;
+    margin-left: -10rem; }
+    #home_page-container #Section textarea {
+      background-color: #efebe4;
+      box-shadow: 5px 5px 5px #453131;
+      border-radius: 8px; }
+    #home_page-container #Section #feeds {
+      margin-left: 5rem;
+      font-weight: 900; }
+    #home_page-container #Section #post-btn {
+      background-color: #4646c8;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px; }
+    #home_page-container #Section #post-btn:hover {
+      background-color: #221baa;
+      box-shadow: 3px 5px 3px #242425; }
+    #home_page-container #Section #posts-list-container {
+      letter-spacing: 2px;
+      font-size: 20px;
+      margin-top: 3rem; }
+      #home_page-container #Section #posts-list-container li {
+        list-style-type: none; }
+        #home_page-container #Section #posts-list-container li p small .delete-post-button {
+          text-decoration: none;
+          background-color: rgba(24, 23, 25, 0.861);
+          color: #de1010;
+          font-weight: 900;
+          font-size: 16px;
+          padding: 5px;
+          border-radius: 2px; }
+        #home_page-container #Section #posts-list-container li p small a:hover {
+          box-shadow: 3px 3px 3px #dc0b0b; }
+    #home_page-container #Section .post-comments #comment-box {
+      background-color: #fbf7f3;
+      border-radius: 5px; }
+    #home_page-container #Section .post-comments #add-btn {
+      background-color: #4646c8;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px; }
+    #home_page-container #Section .post-comments #add-btn:hover {
+      background-color: #080ea3;
+      box-shadow: 3px 5px 3px #242425; }
+  #home_page-container #user-friends {
+    width: 30%;
+    padding: 12px;
+    margin-left: 5rem; }
+    #home_page-container #user-friends a {
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-size: 16px; }

@@ -1,0 +1,91 @@
+h1 {
+    // margin-top: -1.5rem;
+}
+#home_page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+           #Section {
+               width: 70%;
+               border-right: 1px solid black;
+               margin-left: -10rem;
+               textarea {
+                   background-color: rgb(239, 235, 228);
+                   box-shadow: 5px 5px 5px rgb(69, 49, 49);
+                   border-radius: 8px;
+                //    margin-left: 10rem;
+               }
+               #feeds{
+                   margin-left: 5rem;
+                   font-weight: 900;
+               }
+               #post-btn {
+                   background-color: rgb(70, 70, 200);
+                   color: white;
+                   border-radius: 5px;
+                   font-size: 16px;
+                   margin: 10px;
+                //    margin-left: 10rem;
+               }
+               #post-btn:hover{
+                   background-color: rgb(34, 27, 170);
+                   box-shadow: 3px 5px 3px rgb(36, 36, 37) ;
+               }
+               #posts-list-container {
+                   letter-spacing: 2px;
+                   font-size: 20px;
+                //    margin-left: 8rem;
+                   margin-top: 3rem;
+
+                   li {
+                       list-style-type: none;
+                       p {
+                           small {
+                               .delete-post-button {
+                                   text-decoration: none;
+                                   background-color: rgba(24, 23, 25, 0.861);
+                                   color: rgb(222, 16, 16);
+                                   font-weight: 900;
+                                   font-size: 16px;
+                                   padding: 5px;
+                                   border-radius: 2px;
+                               }
+                               a:hover {
+                                   box-shadow: 3px 3px 3px rgb(220, 11, 11);
+                               }
+                           }
+                       }
+                   }
+               }
+               .post-comments {
+                   #comment-box {
+                       background-color:rgb(251, 247, 243);
+                       border-radius: 5px;
+                   }
+                   #add-btn {
+                   background-color: rgb(70, 70, 200);
+                   color: white;
+                   border-radius: 5px;
+                   font-size: 16px;
+                   margin: 10px;
+                   }
+                   #add-btn:hover {
+                   background-color: rgb(8, 14, 163);
+                   box-shadow: 3px 5px 3px rgb(36, 36, 37) ;
+                   }
+               }
+              
+           } 
+           #user-friends {
+                 width: 30%;
+                 padding: 12px;
+                 margin-left: 5rem;
+
+                 a {
+                   text-decoration: none;
+                   letter-spacing: 2px;
+                   font-weight: 900;
+                   font-size: 16px;
+                 }
+            } 
+        }

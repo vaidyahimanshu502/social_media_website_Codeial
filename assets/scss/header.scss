@@ -1,0 +1,37 @@
+#header {
+    height: 3.5rem;
+    width: 100%;
+    background-color: rgb(4, 4, 207);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+
+    h1 {
+        margin: 10px;
+        font-weight: 900;
+        font-size: 48;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li {
+            list-style-type: none;
+            margin-top: -20px;
+            margin-left: 10px;
+            a {
+                color: white;
+                margin-right: 100px;
+                margin-top: -10px;
+                text-decoration: none;
+            }
+            a:hover {
+                color: rgb(222, 143, 65);
+            }
+        }
+    }
+}

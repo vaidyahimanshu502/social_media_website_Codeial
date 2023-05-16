@@ -1,0 +1,23 @@
+#footer {
+  background-color: #0404cf;
+  color: white;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  min-width: 100%; }
+  #footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -30px; }
+    #footer ul li {
+      list-style-type: none;
+      margin: 12px; }
+      #footer ul li a {
+        text-decoration: none;
+        color: white; }
+      #footer ul li a:hover {
+        color: #de8f41; }
