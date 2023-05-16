@@ -1,3 +1,3 @@
-  
-#Major_Project : social_media_website_Codeial
+ ** Major_Project :**
+**#social_media_website_Codeial**
 Social Media WebApp Codeial
